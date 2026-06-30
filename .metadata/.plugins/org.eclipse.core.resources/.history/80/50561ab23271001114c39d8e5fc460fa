@@ -1,0 +1,54 @@
+import java.util.*;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+public class Exp39_challenge2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		Scanner sc = new Scanner(System.in);
+		String name = sc.nextLine();
+		System.out.println("キャラクター名を入力してください");
+		System.out.println("キャラクター名："+ name);
+		System.out.println("初期ステータス");
+		
+		Random rand = new Random();
+		int HP = rand.nextInt(10)+1;
+		int attack = rand.nextInt(5)+1;
+		int defense = rand.nextInt(5)+1;
+		int cool = rand.nextInt(5)+1;
+		
+		System.out.println("HP:"+ 1);
+		System.out.println("攻撃力："+ 1);
+		System.out.println("防御力："+ 1);
+		System.out.println("カッコよさ："+ 1);
+		System.out.println();
+		System.out.println();
+		
+		int allHP = 0;
+		int allattack = 0;
+		int alldefense = 0;
+		int allcool = 0;
+		
+		for(int i = 1; i < 6; i++) {
+		System.out.println(name+"は"+i+"レベルに上がりました！");
+		System.out.println("HPが"+HP+"上がりました");
+		System.out.println("攻撃力が"+attack+"上がりました");
+		System.out.println("防御力が"+defense+"上がりました");
+		System.out.println("カッコよさが"+cool+"上がりました");
+		
+		allHP += HP;
+		allattack += attack;
+		alldefense += defense;
+		allcool += cool;
+		}
+		
+		System.out.println("レベルアップ処理が完了しました");
+		System.out.println("レベル５のステータス");
+		System.out.println("HP："+allHP);
+		System.out.println("攻撃力"+allattack);
+		System.out.println("防御力"+alldefense);
+		System.out.println("カッコよさ"+allcool);
+	}
+
+}
