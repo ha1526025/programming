@@ -21,11 +21,18 @@ public class pra_1 {
         Student student2 = new Student();
         student2.name = "花子";
         student2.age = 19;
+        
+        Student student3 = new Student();
+        student3.name = "いくむ";
+        student3.age = 18;
 
         student1.introduce();
         System.out.println();
 
         student2.introduce();
+        System.out.println();
+        
+        student3.introduce();
 
 	}
 
