@@ -3,7 +3,7 @@
 class SumTest {
 	public static void main(String[] args) {
 		int count = 0;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 10; i++) {
 			count += i; // 毎回 i を足し込む
 		}
 		System.out.println(count);
